@@ -1,7 +1,7 @@
 import 'dart:developer';
 
 import 'package:app_lock_flutter/main.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -41,14 +41,14 @@ class PasswordController extends GetxController implements GetxService {
         passcode = "";
         update();
       } else {
-        Fluttertoast.showToast(msg: "Invalid Passcode");
+        // Fluttertoast.showToast(msg: "Invalid Passcode");
       }
     } else {
       if (addedPassCode == passcode) {
         prefs.setString(AppConstants.setPassCode, passcode);
         navigatorKey.currentState!.pop();
       } else {
-        Fluttertoast.showToast(msg: "passcode does not match");
+        // Fluttertoast.showToast(msg: "passcode does not match");
       }
     }
   }

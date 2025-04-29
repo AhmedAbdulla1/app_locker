@@ -6,7 +6,7 @@ import 'package:app_lock_flutter/widgets/confirmation_dialog.dart';
 import 'package:device_apps/device_apps.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
-import 'package:fluttertoast/fluttertoast.dart';
+// import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/instance_manager.dart';
 import 'package:get/state_manager.dart';
 import 'package:lottie/lottie.dart';
@@ -283,8 +283,8 @@ class UnlockedAppScreen extends StatelessWidget {
                                               context,
                                             );
                                           } else {
-                                            Fluttertoast.showToast(
-                                                msg: "Set password");
+                                            // Fluttertoast.showToast(
+                                            //     msg: "Set password");
                                           }
                                         },
                                       ),

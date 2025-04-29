@@ -1,4 +1,4 @@
-package com.applockflutter
+package com.ex.applockflutter
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -13,7 +13,7 @@ import androidx.core.content.ContextCompat
 import com.andrognito.pinlockview.IndicatorDots
 import com.andrognito.pinlockview.PinLockListener
 import com.andrognito.pinlockview.PinLockView
-import com.applockflutter.R
+import com.ex.applockflutter.R
 
 
 @SuppressLint("InflateParams")

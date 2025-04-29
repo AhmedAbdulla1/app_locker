@@ -72,14 +72,7 @@
         app:keypadTextColor="#FFFFFF"
         app:keypadTextSize="18dp"
         />
-    <com.ex.applockflutter.CustomKeypad
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:keypadShowDeleteButton="true"
-        app:keypadButtonSize="48dp"
-        app:keypadButtonBackgroundDrawable="@drawable/button_background"
-        app:keypadTextColor="@color/black"
-        app:keypadTextSize="16sp" />
+    
 
 
 

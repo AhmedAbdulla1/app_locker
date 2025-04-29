@@ -11,6 +11,23 @@ class ServiceController {
   SharedPreferences? prefs;
   ServiceController({this.prefs});
 
+  // final picker = ImagePicker();
+
+  // Future<File> getImagec(GetImageType type) async {
+  //   log(type.name + GetImageType.camera.toString());
+  //   final pickedFile;
+  //   if (type.name == GetImageType.camera.name) {
+  //     pickedFile =
+  //         await picker.pickImage(source: ImageSource.camera, imageQuality: 25);
+  //   } else {
+  //     pickedFile =
+  //         await picker.pickImage(source: ImageSource.gallery, imageQuality: 25);
+  //   }
+  //   // imageBytes = await pickedFile.readAsBytes();
+  //   // base64Image = base64Encode(imageBytes!);
+  //   log("${pickedFile.path}");
+  //   return File(pickedFile.path);
+  // }
 
   Future<DateTime> selectDate(
       context, DateTime? startData, DateTime? endDate) async {

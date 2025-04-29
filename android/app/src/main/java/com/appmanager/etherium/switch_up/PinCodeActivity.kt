@@ -5,7 +5,7 @@ import androidx.core.content.ContextCompat
 import com.andrognito.pinlockview.IndicatorDots
 import com.andrognito.pinlockview.PinLockListener
 import com.andrognito.pinlockview.PinLockView
-import com.applockFlutter.R
+import com.ex.applockflutter.R
 
 
 class PinCodeActivity(
