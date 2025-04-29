@@ -57,7 +57,6 @@ class _SetPasscodeState extends State<SetPasscode> {
           ),
         ),
         appBar: AppBar(
-          backgroundColor: Theme.of(context).backgroundColor,
           centerTitle: true,
           iconTheme: const IconThemeData(
             color: Colors.white,
@@ -73,9 +72,6 @@ class _SetPasscodeState extends State<SetPasscode> {
           ),
           title: Text(
             "Set Passcode",
-            style: Theme.of(context).textTheme.bodyText1!.copyWith(
-                  color: Colors.white,
-                ),
           ),
         ),
         body: SizedBox(
@@ -105,9 +101,6 @@ class _SetPasscodeState extends State<SetPasscode> {
                   return Text(
                     state.isConfirm ? "Confirm Passcode" : "Set Passcode",
                     textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.subtitle1!.copyWith(
-                          color: Colors.white,
-                        ),
                   );
                 }),
               ),

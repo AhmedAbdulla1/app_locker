@@ -25,7 +25,6 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).backgroundColor,
         centerTitle: true,
         iconTheme: const IconThemeData(
           color: Colors.white,
@@ -52,9 +51,6 @@ class _SearchPageState extends State<SearchPage> {
         ),
         title: Text(
           "Search App",
-          style: Theme.of(context).textTheme.bodyText1!.copyWith(
-                color: Colors.white,
-              ),
         ),
       ),
       body: Column(
@@ -78,9 +74,6 @@ class _SearchPageState extends State<SearchPage> {
                   onChanged: (value) {
                     state.appSearch();
                   },
-                  style: Theme.of(context).textTheme.subtitle1!.copyWith(
-                        color: Colors.white,
-                      ),
                   decoration: InputDecoration(
                     contentPadding: const EdgeInsets.symmetric(
                       horizontal: 14,
@@ -89,9 +82,6 @@ class _SearchPageState extends State<SearchPage> {
                     isCollapsed: true,
                     filled: true,
                     hintText: 'Search apps',
-                    hintStyle: Theme.of(context).textTheme.subtitle1!.copyWith(
-                          color: Colors.white,
-                        ),
                     prefixIcon: const Padding(
                       padding: EdgeInsets.all(12),
                       child: Icon(
@@ -161,21 +151,11 @@ class _SearchPageState extends State<SearchPage> {
                                     Text(
                                       state.searchedApps[index].application!
                                           .appName,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .bodyText1!
-                                          .copyWith(color: Colors.white),
                                     ),
                                     Text(
                                       state.searchedApps[index].application!
                                           .versionName,
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .subtitle1!
-                                          .copyWith(
-                                            color: Colors.white,
-                                            fontSize: 12,
-                                          ),
+
                                     ),
                                   ],
                                 ),

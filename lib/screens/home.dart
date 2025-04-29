@@ -8,7 +8,7 @@ import 'package:app_lock_flutter/screens/unlocked_apps.dart';
 import 'package:app_lock_flutter/widgets/ask_permission_dialog.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();

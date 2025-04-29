@@ -54,7 +54,6 @@ class ConfirmationDialog extends StatelessWidget {
                     height: dialogHeight ?? size.height * 0.25,
                     width: size.width * 0.8,
                     decoration: BoxDecoration(
-                      color: bodyTextColor ?? Theme.of(context).backgroundColor,
                     ),
                     child: Column(
                       children: [
@@ -69,13 +68,7 @@ class ConfirmationDialog extends StatelessWidget {
                                 child: Center(
                                   child: Text(
                                     heading!,
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .bodyText1!
-                                        .copyWith(
-                                          fontSize: 18,
-                                          color: Colors.white,
-                                        ),
+
                                   ),
                                 ),
                               ),
@@ -85,10 +78,7 @@ class ConfirmationDialog extends StatelessWidget {
                           child: Text(
                             bodyText!,
                             textAlign: bodyTextAlign ?? TextAlign.center,
-                            style:
-                                Theme.of(context).textTheme.bodyText2!.copyWith(
-                                      color: Colors.white,
-                                    ),
+
                           ),
                         ),
                         const Spacer(),
@@ -114,10 +104,6 @@ class ConfirmationDialog extends StatelessWidget {
                                     okButton == null
                                         ? button1Text ?? "No"
                                         : "Ok",
-                                    style: Theme.of(context)
-                                        .textTheme
-                                        .bodyText2!
-                                        .copyWith(color: Colors.white),
                                   ),
                                 ),
                               ),
@@ -141,10 +127,6 @@ class ConfirmationDialog extends StatelessWidget {
                                   child: Center(
                                     child: Text(
                                       button2Text ?? "Yes",
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .bodyText2!
-                                          .copyWith(color: Colors.black),
                                     ),
                                   ),
                                 ),

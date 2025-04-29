@@ -66,10 +66,7 @@ class PasswordCorfirmDialog extends StatelessWidget {
                           child: TextField(
                             obscureText: true,
                             autofocus: true,
-                            style: Theme.of(context)
-                                .textTheme
-                                .subtitle1!
-                                .copyWith(color: Colors.white),
+
                             onChanged: (value) {
                               Fluttertoast.cancel();
                               if (value.length == 6 &&
@@ -92,10 +89,7 @@ class PasswordCorfirmDialog extends StatelessWidget {
                               ),
                               // labelText: 'Enter Passcode...',
                               hintText: 'Enter Passcode...',
-                              labelStyle: Theme.of(context)
-                                  .textTheme
-                                  .subtitle1!
-                                  .copyWith(color: Colors.white),
+
                               isCollapsed: true,
                               filled: true,
                               fillColor: Colors.transparent,
