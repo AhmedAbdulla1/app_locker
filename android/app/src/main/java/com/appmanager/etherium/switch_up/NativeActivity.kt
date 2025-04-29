@@ -1,4 +1,4 @@
-package com.applockFlutter
+package com.applockflutter
 
 import android.annotation.SuppressLint
 import android.os.Bundle

@@ -1,4 +1,4 @@
-package com.applockFlutter
+package com.applockflutter
 
 import android.content.BroadcastReceiver
 import android.content.Context

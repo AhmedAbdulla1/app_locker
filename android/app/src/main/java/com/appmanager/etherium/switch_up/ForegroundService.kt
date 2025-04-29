@@ -1,4 +1,4 @@
-package com.applockFlutter
+package com.applockflutter
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
